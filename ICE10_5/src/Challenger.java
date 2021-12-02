@@ -1,2 +1,6 @@
-public class Challenger {
+public class Challenger extends Player
+{
+
+
 }
+
