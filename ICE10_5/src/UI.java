@@ -1,7 +1,22 @@
 import java.util.Scanner;
 
 public class UI {
+//TODO evt. smæk selectPlayerAmount + createPlayer sammen
+    public void selectPlayerAmount(){
+        int i = 0;
+        while(i<1 ){
+            String input = getUserInput("Indtast mængden af spillere (eller Q for at quitte) ");
+            if(input.equalsIgnoreCase("Q")){
+                break;
+            }
+
+           Main.MAX=Integer.parseInt(input);
+            break;
+        }
+
+    }
     public void createPlayer() {
+
 
         int i = 0;
         while(i<Main.MAX ){

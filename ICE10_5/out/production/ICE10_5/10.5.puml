@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Player *-- Dealer
+Player *-- Challenger
+Scoreboard *-- Player
+Main <|- UI
+Main <|- Scoreboard
+Cards *-- playingCards
+Cards *-- Chance
+Dice *-- Chance
+
+Main <|- Cards
+abstract class Player
+class Challenger
+class Scoreboard
+class UI
+class Dealer
+class Chance
+abstract class Cards
+class playingCards
+class Main
+class Dice
+@endum
