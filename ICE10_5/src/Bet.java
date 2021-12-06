@@ -18,7 +18,7 @@ public class Bet {
 
     public void rewardBet(int bet)
     {
-        System.out.println("You won! You now have " + bet + "sips to give out.");
+        System.out.println("You win! You now have " + bet + "sips to give out.");
     }
 
 }

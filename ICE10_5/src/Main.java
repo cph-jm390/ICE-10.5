@@ -12,13 +12,23 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ui.selectPlayerAmount();
-        ui.createPlayer();
 
+       
+
+
+
+        //Scoreboard scoreboard =new Scoreboard(points,players);
+        // ui.selectPlayerAmount();
+        // ui.createPlayer()
+
+        DeckOfCards deck = new DeckOfCards();
+
+        //print out the deck.
+        System.out.println(deck.getDeck());
 
 
     }
     }
-}
+
 
 //TODO for each loop
