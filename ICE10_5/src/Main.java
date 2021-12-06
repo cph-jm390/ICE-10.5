@@ -15,8 +15,8 @@ public class Main {
 
 
         //Scoreboard scoreboard =new Scoreboard(points,players);
-        // ui.selectPlayerAmount();
-        // ui.createPlayer()
+         ui.selectPlayerAmount();
+         ui.createPlayer();
 
         DeckOfCards deck = new DeckOfCards();
 
@@ -26,8 +26,6 @@ public class Main {
 
     }
 }
-
-
 
 
 //TODO for each loop
