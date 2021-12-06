@@ -3,6 +3,7 @@ public class Chance {
     private int chanceNum2;
 
     public int Chance() {
+        return 0;
     }
 
     public int chanceRoll(){
