@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class UI {
-
+//TODO evt. smæk selectPlayerAmount + createPlayer sammen
     public void selectPlayerAmount(){
         int i = 0;
         while(i<1 ){
