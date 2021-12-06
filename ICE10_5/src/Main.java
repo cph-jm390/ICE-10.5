@@ -13,9 +13,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-       
-
-
 
         //Scoreboard scoreboard =new Scoreboard(points,players);
         // ui.selectPlayerAmount();
@@ -24,11 +21,13 @@ public class Main {
         DeckOfCards deck = new DeckOfCards();
 
         //print out the deck.
-        System.out.println(deck.getDeck());
+       System.out.println(deck.getDeck());
 
 
     }
-    }
+}
+
+
 
 
 //TODO for each loop
