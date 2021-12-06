@@ -19,7 +19,7 @@ public class UI {
 
 
         int i = 0;
-        while(i<Main.MAX ){
+        while(i<Main.MAX){
             String input = getUserInput("Navn? (eller Q for at quitte) ");
             if(input.equalsIgnoreCase("Q")){
                 break;
