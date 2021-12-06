@@ -12,11 +12,24 @@ public class Chance {
     }
 
     public int pickChanceCard(){
-        chanceNum = (int) (50*Math.random() + 1);
+        chanceNum = (int) (52*Math.random() + 1);
+        return chanceNum;
+    }
+    public int getChanceNum() {
         return chanceNum;
     }
 
+    public void setChanceNum(int chanceNum) {
+        this.chanceNum = chanceNum;
+    }
 
+    public int getChanceNum2() {
+        return chanceNum2;
+    }
+
+    public void setChanceNum2(int chanceNum2) {
+        this.chanceNum2 = chanceNum2;
+    }
 }
 
 
