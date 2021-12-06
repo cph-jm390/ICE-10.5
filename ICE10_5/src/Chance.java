@@ -16,6 +16,7 @@ public class Chance {
         chanceNum = (int) (52*Math.random() + 1);
         return chanceNum;
     }
+
     public int getChanceNum() {
         return chanceNum;
     }
