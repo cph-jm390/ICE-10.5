@@ -3,6 +3,7 @@ import java.util.Collections;
 
 public class DeckOfCards {
     ArrayList<Card> cards = new ArrayList<Card>();
+    ArrayList<Card> OGcards= new ArrayList<Card>();
 
     String[] values = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
     String[] suit = {"Club", "Spade", "Diamond", "Heart"};
@@ -15,8 +16,15 @@ public class DeckOfCards {
             }
         }
         //shuffle the deck when its created
+        OGcards=cards;
         Collections.shuffle(this.cards);
-
+        for(Player player:Main.players){
+            int i=0;
+            System.out.println(Main.players.get(i)+" recieves the following card: "+cards.get(i));
+            cards.remove(i);
+            i++;
+        }
+    cards=OGcards;
     }
 
     public ArrayList<Card> getDeck(){

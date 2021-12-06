@@ -13,13 +13,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-       
+
 
 
 
         //Scoreboard scoreboard =new Scoreboard(points,players);
-        // ui.selectPlayerAmount();
-        // ui.createPlayer()
+         ui.selectPlayerAmount();
+         ui.createPlayer();
 
         DeckOfCards deck = new DeckOfCards();
 
