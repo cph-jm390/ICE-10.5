@@ -10,5 +10,12 @@ public class Die {
 
     return die;
     }
+
+    public int getDie() {
+        return die;
+    }
+
+    public void setDie(int die) {
+        this.die = die;
+    }
 }
-//TODO get og setter
