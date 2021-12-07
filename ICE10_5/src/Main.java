@@ -15,19 +15,11 @@ public class Main {
 
         PlayGame game1=new PlayGame();
         game1.startGame();
-        //Scoreboard scoreboard =new Scoreboard(points,players);
-        /* ui.selectPlayerAmount();
-         ui.createPlayer();
-*/
-        /*DeckOfCards deck = new DeckOfCards();
-        deck.cards.remove(0)
 
-        //print out the deck.
-       System.out.println(deck.getDeck());*/
 
 
     }
 }
 
 
-//TODO for each loop
+

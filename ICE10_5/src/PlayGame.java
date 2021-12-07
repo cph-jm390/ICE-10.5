@@ -1,13 +1,14 @@
 public class PlayGame {
     UI ui= new UI();
     DeckOfCards deck=new DeckOfCards();
+    Bet bet=new Bet();
 
 
 
     public void startGame(){
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
-        //TODO Insert bet function here
+        bet.wagerBet();
         deck.giveFirstSet();
 
     }
@@ -23,11 +24,12 @@ public class PlayGame {
     //card update on player
 
 //Hit or stand
-    public void HitOrStand(){
+    public void HitOrStand() {
         String command;
         char c;
-        for (int i=0;i < Main.players.size();i++){
-            if(Main.players.size())
+        for (int i = 0; i < Main.players.size(); i++) {
+            if (Main.players.size()) {
+            }
         }
     }
 
