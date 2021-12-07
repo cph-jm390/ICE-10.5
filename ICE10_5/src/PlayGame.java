@@ -6,9 +6,10 @@ public class PlayGame {
 
     public void startGame(){
         ui.selectPlayerAmount();
-        ui.createPlayer();
+        ui.createPlayer(); //makes last player dealer
+        //TODO Insert bet function here
         deck.giveFirstSet();
-        //mangler at tildele dealer rolle til 1 spiller
+
     }
 
     public void dealFirstSet(){
