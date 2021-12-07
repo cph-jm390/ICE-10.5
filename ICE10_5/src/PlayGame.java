@@ -8,8 +8,8 @@ public class PlayGame {
     public void startGame(){ //DONE!!!
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
-        bet.wagerBet();
-        deck.giveFirstSet();
+        bet.wagerBet(); //kan genbruges til hver runde
+        deck.giveFirstSet(); //kan gennbruges til hver runde
 
     }
 
