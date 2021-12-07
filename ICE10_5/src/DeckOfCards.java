@@ -8,7 +8,6 @@ public class DeckOfCards {
     String[] values = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
     String[] suit = {"Club", "Spade", "Diamond", "Heart"};
 
-    static boolean firstThread = true;
     public DeckOfCards(){
         for (int i = 0; i<suit.length; i++) {
             for(int j=0; j<values.length; j++){
@@ -30,6 +29,10 @@ public class DeckOfCards {
 
     public ArrayList<Card> getDeck(){
         return cards;
+    }
+
+    {
+
     }
 }
 
