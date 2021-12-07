@@ -35,7 +35,13 @@ public class DeckOfCards {
         return cards;
     }
 
+    public String[] getValues() {
+        return values;
+    }
+
     {
+
+
 
     }
 }
