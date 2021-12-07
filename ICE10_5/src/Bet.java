@@ -7,11 +7,11 @@ public class Bet {
         this.bet = bet;
     }
 
-    public int wagerBet() {
+    public void wagerBet() {
         for (int i = 0; i < Main.players.size(); i++) {
             if (Main.players.size() > 0) {
                 Scanner in = new Scanner(System.in);
-                System.out.print("How much do you want to a bet(sips or shots):" + Main.players.get(0).getName() + "?");
+                System.out.print("How much do you want to a bet(sips):" + Main.players.get(i).getName() + "?");
                 int bet = (int) in.nextDouble();
                 System.out.println("You wagered " + bet);
                 for (int x = Main.players.size(); x >= 0; x--) {
@@ -21,7 +21,6 @@ public class Bet {
                 }
             }
         }
-        return bet;
     }
 
 
