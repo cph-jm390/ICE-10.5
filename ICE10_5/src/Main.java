@@ -19,6 +19,7 @@ public class Main {
          ui.createPlayer();
 
         DeckOfCards deck = new DeckOfCards();
+        deck.cards.remove(0)
 
         //print out the deck.
        System.out.println(deck.getDeck());

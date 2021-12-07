@@ -6,7 +6,7 @@ public class DeckOfCards {
     ArrayList<Card> OGcards= new ArrayList<Card>();
 
     String[] values = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
-    String[] suit = {"Club", "Spade", "Diamond", "Heart"};
+    String[] suit = {"Clubs", "Spades", "Diamonds", "Hearts"};
 
     public DeckOfCards(){
         for (int i = 0; i<suit.length; i++) {
