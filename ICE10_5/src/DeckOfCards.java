@@ -18,10 +18,11 @@ public class DeckOfCards {
         //shuffle the deck when its created
         OGcards=cards;
         Collections.shuffle(this.cards);
+        int i=0;
         for(Player player:Main.players){
-            int i=0;
-            System.out.println(Main.players.get(i)+" recieves the following card: "+cards.get(i));
-            cards.remove(i);
+
+            System.out.println(Main.players.get(i)+" recieves the following card: "+cards.get(0));
+            cards.remove(0);
             i++;
         }
     cards=OGcards;

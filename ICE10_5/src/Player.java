@@ -32,4 +32,13 @@ public class Player {
     public void setPlayerScore(int playerScore) {
         this.playerScore = playerScore;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "name='" + name + '\'' +
+                ", playerNum=" + playerNum +
+                ", playerScore=" + playerScore +
+                '}';
+    }
 }
