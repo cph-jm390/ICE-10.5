@@ -3,6 +3,7 @@ public class PlayGame {
     DeckOfCards deck=new DeckOfCards();
 
 
+
     public void startGame(){
         ui.selectPlayerAmount();
         ui.createPlayer();
@@ -22,7 +23,11 @@ public class PlayGame {
 
 //Hit or stand
     public void HitOrStand(){
-
+        String command;
+        char c;
+        for (int i=0;i < Main.players.size();i++){
+            if(Main.players.size())
+        }
     }
 
 //Dealer plays
@@ -33,12 +38,15 @@ public void dealerPlay() {
     public void resetHand() {
 
     }
-}
+
 //card update on player
 
+//Checks for 10.5
+
+}
 //Hit or stand
 
 //Dealer plays
 
 
-// 
+//
