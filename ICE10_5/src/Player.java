@@ -1,8 +1,19 @@
+import java.util.ArrayList;
+
 public class Player {
    public String name;
     private int playerNum;
     private int playerScore;
 
+    private ArrayList<Player> players=new ArrayList<>();
+
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(ArrayList<Player> players) {
+        this.players = players;
+    }
 
     public Player(String name, int playerNum) {
         this.name = name;

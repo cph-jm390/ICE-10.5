@@ -1,10 +1,15 @@
 import java.util.ArrayList;
 
-public class Scoreboard {
+public class Scoreboard extends Player {
     //TODO lav kommando !points eller !score for at få visuelt display op for player points
 
     private ArrayList <Integer> points=new ArrayList<>();
-    private ArrayList <Player> players=new ArrayList<>();
+
+    public Scoreboard(String name, int playerNum, ArrayList<Integer> points) {
+        super(name, playerNum);
+        this.points=points;
+    }
+
 
     public ArrayList<Integer> getPoints() {
         return points;
@@ -14,17 +19,6 @@ public class Scoreboard {
         this.points = points;
     }
 
-    public ArrayList<Player> getPlayers() {
-        return players;
-    }
 
-    public void setPlayers(ArrayList<Player> players) {
-        this.players = players;
-    }
 
-    public Scoreboard(ArrayList<Integer> points, ArrayList <Player> players) {
-        this.points = points;
-        this.players=players;
-
-    }
 }

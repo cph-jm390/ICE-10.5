@@ -34,3 +34,11 @@ public void dealerPlay() {
 
     }
 }
+//card update on player
+
+//Hit or stand
+
+//Dealer plays
+
+
+// 

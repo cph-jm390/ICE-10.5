@@ -10,7 +10,7 @@ public class Bet {
     public static int wagerBet()
     {
         Scanner in = new Scanner(System.in);
-        System.out.print("Wager a bet: ");
+        System.out.print("Wager a bet(sips or shots): ");
         int bet = (int) in.nextDouble();
         System.out.println("You wagered " + bet);
         return bet;
@@ -18,7 +18,7 @@ public class Bet {
 
     public void rewardBet(int bet)
     {
-        System.out.println("You win! You now have " + bet + "sips to give out.");
+        System.out.println("You win! You now have " + bet + "sips or shots to give out.");
     }
 
 }
