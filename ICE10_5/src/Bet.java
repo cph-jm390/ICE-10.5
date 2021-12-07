@@ -32,5 +32,16 @@ public class Bet {
         System.out.println("You win! You now have " + bet + "sips or shots to give out.");
     }
 /// ikke færdigt
+
+    public void rewardBets() {
+        System.out.println();
+
+                }
+            }
+        }
+
+    }
 }
+
+
 

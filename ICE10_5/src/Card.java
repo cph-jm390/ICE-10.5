@@ -1,15 +1,19 @@
+import java.util.Arrays;
+
 public class Card {
 
 
     private String suit;
-    private int value;
+    private String value;
+    private double cardValue;
 
 
-    public Card(String suit, String value){
+    public Card(String suit, String value, double cardValue){
         this.suit = suit;
         this.value = value;
+        this.cardValue = cardValue;
     }
-    public Card(){}
+    public Card(String s, String value){}
     public String getSuit(){
         return suit;
     }
@@ -23,26 +27,39 @@ public class Card {
         this.value = value;
     }
 
-    public String toString(){
-        return "\n"+value + " of "+ suit;
+    public double getCardValue() {
+        return cardValue;
+    }
+
+    public void setCardValue(double cardValue) {
+        this.cardValue = cardValue;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "suit='" + suit + '\'' +
+                ", value='" + value + '\'' +
+                ", cardValue=" + Arrays.toString(cardValue) +
+                '}';
     }
 
     public String getValueName(){
 
         String name = "Unknown";
 
-        if (this.value == 1) {
-            name = "A";
+        if (cardValue == 0.5; {
+           () = "A";
         }
-        else if (this.value == 2) {
-            name = "Two";
+        else if (cardValue == 2) {
+            name = "2";
         }
-        else if (this.value == 3) {
-            name = "Three";
+        else if (cardValue == 3) {
+            name = "3";
         }
-        else if (this.value == 4) {
-            name = "Four";
-        }
+        else if (cardValue == 4) {
+            name = "4";
+
         else if (this.value == 5) {
             name = "Five";
         }
@@ -71,7 +88,7 @@ public class Card {
 
             name = "Queen";
         }
-        else if (this.value == 13) {
+        else if (this.value == "13") {
 
             name = "King";
 
