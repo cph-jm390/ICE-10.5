@@ -5,7 +5,7 @@ public class PlayGame {
 
 
 
-    public void startGame(){
+    public void startGame(){ //DONE!!!
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet();
