@@ -4,6 +4,7 @@ public class Player {
    public String name;
     private int playerNum;
     private int playerScore;
+    private boolean isDealer;
 
     private ArrayList<Player> players=new ArrayList<>();
 
@@ -15,9 +16,18 @@ public class Player {
         this.players = players;
     }
 
-    public Player(String name, int playerNum) {
+    public Player(String name, int playerNum, boolean isDealer) {
         this.name = name;
         this.playerNum = playerNum;
+        this.isDealer=isDealer;
+    }
+
+    public boolean isDealer() {
+        return isDealer;
+    }
+
+    public void setDealer(boolean dealer) {
+        isDealer = dealer;
     }
 
     public String getName() {
@@ -49,6 +59,7 @@ public class Player {
         return "Player{" +
                 "name='" + name + '\'' +
                 ", playerNum=" + playerNum +
+                ", isDealer=" + isDealer +
                 ", playerScore=" + playerScore +
                 '}';
     }

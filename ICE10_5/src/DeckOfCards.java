@@ -4,7 +4,7 @@ import java.util.Collections;
 public class DeckOfCards {
     ArrayList<Card> cards = new ArrayList<Card>();
     ArrayList<Card> OGcards= new ArrayList<Card>();
-    cards=OGcards;
+    //cards=OGcards;
     String[] values = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
     String[] suit = {"Clubs", "Spades", "Diamonds", "Hearts"};
 
@@ -15,9 +15,9 @@ public class DeckOfCards {
             }
         }
     }
-    
+
     public void giveFirstSet(){
-        
+
         //shuffle the deck when its created
         OGcards=cards;
         Collections.shuffle(this.cards);
@@ -28,7 +28,7 @@ public class DeckOfCards {
             cards.remove(0);
             i++;
         }
-    
+
     }
 
     public ArrayList<Card> getDeck(){

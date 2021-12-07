@@ -21,10 +21,15 @@ public class UI {
             String input = getUserInput("Navn? (eller Q for at quitte) ");
             if(input.equalsIgnoreCase("Q")){
                 break;
-            }
-            Main.players.add(new Player(input,i));
+           }
+            Main.players.add(new Player(input,i,false));
             i++;
+
         }
+        Main.players.get(i-1).setDealer(true);
+
+
+
     }
 
     /**

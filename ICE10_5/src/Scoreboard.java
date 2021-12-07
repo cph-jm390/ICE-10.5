@@ -5,8 +5,8 @@ public class Scoreboard extends Player {
 
     private ArrayList <Integer> points=new ArrayList<>();
 
-    public Scoreboard(String name, int playerNum, ArrayList<Integer> points) {
-        super(name, playerNum);
+    public Scoreboard(String name, int playerNum, boolean isDealer, ArrayList<Integer> points) {
+        super(name, playerNum, isDealer);
         this.points=points;
     }
 

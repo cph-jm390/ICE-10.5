@@ -2,8 +2,8 @@ public class Challenger extends Player
 {
 
 
-    public Challenger(String name, int playerNum) {
-        super(name, playerNum);
+    public Challenger(String name, int playerNum, boolean isDealer) {
+        super(name, playerNum,isDealer);
     }
 }
 
