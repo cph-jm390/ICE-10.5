@@ -40,25 +40,25 @@ public class Bet {
                     System.out.format("Thank you. You entered %d\n", bet);
                 }
 
+            }
+
+
         }
+    }
 
 
-
-}
-        }
-
-
-public void rewardBet(){
+    public void rewardBet() {
 
         // if round end = true print...
-        System.out.println("You win! You now have "+bet+"sips or shots to give out.");
-        }
+        System.out.println("You win! You now have " + bet + "sips or shots to give out.");
+    }
 /// ikke færdigt
 
-public void rewardBets(){
+    public void rewardBets() {
         System.out.println();
 
-        }
+    }
+}
 
 
 

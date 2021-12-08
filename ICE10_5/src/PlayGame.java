@@ -1,11 +1,10 @@
 public class PlayGame {
-    UI ui= new UI();
-    DeckOfCards deck=new DeckOfCards();
-    Bet bet=new Bet();
+    UI ui = new UI();
+    DeckOfCards deck = new DeckOfCards();
+    Bet bet = new Bet();
 
 
-
-    public void startGame(){ //DONE!!!
+    public void startGame() { //DONE!!!
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet(); //kan genbruges til hver runde
@@ -13,7 +12,7 @@ public class PlayGame {
 
     }
 
-    public void dealFirstSet(){
+    public void dealFirstSet() {
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
 
@@ -25,17 +24,28 @@ public class PlayGame {
     }
     //card update on player
 
-//Hit or stand
+    //Hit or stand
     public void HitOrStand() {
         String command;
         char c;
         for (int i = 0; i < Main.players.size(); i++) {
-            if (Main.players.size()<0) {
+            if (Main.players.size() < 0) {
             }
         }
     }
 
-//Dealer plays
+    //Dealers turn
+    public void dealerTurn() {
+        boolean isPlayersStillInTheGame = false;
+        for (int i = 0; i < Main.players.size() && isPlayersStillInTheGame == false; i++) {
+            if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) < 10.5) {
+                isPlayersStillInTheGame = true;
+            }
+        }
+        if (isPlayersStillInTheGame) {
+            //dealer playes
+        }
+    }
 
     //reset hand
     // ;
@@ -45,7 +55,27 @@ public class PlayGame {
 
 //Checks for 10.5
 
-}
+    //ikke færdigt
+    public void settleBets() {
+        System.out.println();
+
+        for (int i = 0; i < Main.players.size(); i++) {
+            if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5) {
+                System.out.println(Main.players.get(i).getName() + " has busted");
+
+            } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <) {
+                //kan ikke calle dealercalculateTotal() && dealer.calculateTotal() <= 10.5 ) {
+                System.out.println(Main.players.get(i).getName() + " has lost");
+
+            } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) == 10.5) {
+                System.out.println(Main.players.get(i).getName() + " has won with 10.5!");
+
+            } else {
+                System.out.println(Main.players.get(i).getName() + " has won");
+            }
+        }
+    }
+
 //Hit or stand
 
 //Dealer plays
