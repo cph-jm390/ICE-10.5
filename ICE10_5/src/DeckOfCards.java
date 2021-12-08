@@ -9,9 +9,31 @@ public class DeckOfCards {
     String[] suit = {"Clubs", "Spades", "Diamonds", "Hearts"};
 
     public DeckOfCards() {
+        double cardValue=0.5;
         for (int i = 0; i < suit.length; i++) {
             for (int j = 0; j < values.length; j++) {
-                this.cards.add(new Card(suit[i], values[j]));
+                if(values[i]=="Ace"){
+                    cardValue=0.5;
+                }else if(values[i]=="2"){
+                    cardValue=2;
+                }else if(values[i]=="3"){
+                    cardValue=3;
+                }else if(values[i]=="4"){
+                    cardValue=4;
+                }else if(values[i]=="5"){
+                    cardValue=5;
+                }else if(values[i]=="6"){
+                    cardValue=6;
+                }else if(values[i]=="7"){
+                    cardValue=7;
+                }else if(values[i]=="8"){
+                    cardValue=8;
+                }else if(values[i]=="9"){
+                    cardValue=9;
+                }else{
+                    cardValue=10;
+                }
+                this.cards.add(new Card(suit[i], values[j],cardValue));
             }
         }
     }
