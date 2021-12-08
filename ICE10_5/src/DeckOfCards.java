@@ -24,7 +24,7 @@ public class DeckOfCards {
         int i=0;
         for(Player player:Main.players){
 
-            System.out.println(Main.players.get(i)+" recieves the following card: "+cards.get(0));
+            System.out.println(Main.players.get(i).getName()+" recieves the following card: "+cards.get(0));
             cards.remove(0);
             i++;
         }

@@ -1,10 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Player {
    public String name;
     private int playerNum;
     private int playerScore;
     private boolean isDealer;
+    private List<Double> handValue=new ArrayList<>();
 
     private ArrayList<Player> players=new ArrayList<>();
 
@@ -16,10 +18,20 @@ public class Player {
         this.players = players;
     }
 
-    public Player(String name, int playerNum, boolean isDealer) {
+    public Player(String name, int playerNum, boolean isDealer,List<Double> handValue) {
         this.name = name;
         this.playerNum = playerNum;
         this.isDealer=isDealer;
+        this.handValue=handValue;
+
+    }
+
+    public List<Double> getHandValue() {
+        return handValue;
+    }
+
+    public void setHandValue(List<Double> handValue) {
+        this.handValue = handValue;
     }
 
     public boolean isDealer() {
@@ -59,8 +71,10 @@ public class Player {
         return "Player{" +
                 "name='" + name + '\'' +
                 ", playerNum=" + playerNum +
-                ", isDealer=" + isDealer +
                 ", playerScore=" + playerScore +
+                ", isDealer=" + isDealer +
+                ", handValue=" + handValue +
+                ", players=" + players +
                 '}';
     }
 }

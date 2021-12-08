@@ -9,11 +9,13 @@ public class PlayGame {
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet(); //kan genbruges til hver runde
-        deck.giveFirstSet(); //kan gennbruges til hver runde
+        deck.giveFirstSet(); //kan genbruges til hver runde
 
     }
 
     public void dealFirstSet(){
+        bet.wagerBet(); //kan genbruges til hver runde
+        deck.giveFirstSet(); //kan genbruges til hver runde
 
     }
 
@@ -28,7 +30,7 @@ public class PlayGame {
         String command;
         char c;
         for (int i = 0; i < Main.players.size(); i++) {
-            if (Main.players.size()) {
+            if (Main.players.size()<0) {
             }
         }
     }

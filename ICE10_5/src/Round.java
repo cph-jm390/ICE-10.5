@@ -1,11 +1,11 @@
 public class Round {
-    /*public int round(){
-        for (int i = 0; i < Main.players.size();i++) {
+    public int round(){
+        /*for (int i = 0; i < Main.players.size();i++) {
             Scoreboard.players[i].becomeDealer();
             }
         return 0;
     }
-    public void checkTenAndAHalf() {
+    public void checkTenAndAHalf() {*/
 
-    }*/
+    return 0;}
     }

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class UI {
@@ -17,12 +19,15 @@ public class UI {
     }
     public void createPlayer() {
         int i = 0;
+        ArrayList<List<Double>> lists=new ArrayList<>();
         while(i<Main.MAX){
             String input = getUserInput("Navn? (eller Q for at quitte) ");
             if(input.equalsIgnoreCase("Q")){
                 break;
            }
-            Main.players.add(new Player(input,i,false));
+            List<Double> list=new ArrayList<>();
+            lists.add(list);
+            Main.players.add(new Player(input,i,false,lists.get(i)));
             i++;
 
         }
