@@ -8,7 +8,6 @@ public class Main {
 
     //public static UI ui= new UI();
     static int MAX = 8;
-    static int maxPlaceholder=0;
     public static Player currentPlayer;
 
 
@@ -17,12 +16,11 @@ public class Main {
         PlayGame game1=new PlayGame();
         game1.startGame();
 
-    for (Player player:Main.players){
-        if (player.)
+
     }
 
     }
-}
+
 
 
 
