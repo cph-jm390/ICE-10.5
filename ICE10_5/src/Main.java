@@ -8,6 +8,7 @@ public class Main {
 
     //public static UI ui= new UI();
     static int MAX = 8;
+    static int maxPlaceholder=0;
     public static Player currentPlayer;
 
 
@@ -22,6 +23,7 @@ public class Main {
 
     }
 }
+
 
 
 
