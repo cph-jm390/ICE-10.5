@@ -16,7 +16,9 @@ public class Main {
         PlayGame game1=new PlayGame();
         game1.startGame();
 
-
+    for (Player player:Main.players){
+        if (player.)
+    }
 
     }
 }
