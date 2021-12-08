@@ -8,6 +8,7 @@ public class Main {
 
     //public static UI ui= new UI();
     static int MAX = 8;
+    public static double maxTotalValue=10.5;
     public static Player currentPlayer;
 
 
