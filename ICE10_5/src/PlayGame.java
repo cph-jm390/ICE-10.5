@@ -36,13 +36,10 @@ public class PlayGame {
     }
 
 //Dealer plays
-public void dealerPlay() {
 
-}
     //reset hand
-    public void resetHand() {
+    // ;
 
-    }
 
 //card update on player
 

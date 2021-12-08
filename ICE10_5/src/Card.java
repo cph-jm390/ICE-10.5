@@ -40,16 +40,16 @@ public class Card {
         return "Card{" +
                 "suit='" + suit + '\'' +
                 ", value='" + value + '\'' +
-                ", cardValue=" + cardValue +
+                ", cardValue=" + Arrays.toString(cardValue) +
                 '}';
     }
 
-    /*public String getValueName(){
+    public String getValueName(){
 
         String name = "Unknown";
 
-        if (cardValue == 0.5); {
-           name = "A";
+        if (cardValue == 0.5; {
+           () = "A";
         }
         else if (cardValue == 2) {
             name = "2";
@@ -60,7 +60,7 @@ public class Card {
         else if (cardValue == 4) {
             name = "4";
 
-        }else if (this.value == 5) {
+        else if (this.value == 5) {
             name = "Five";
         }
         else if (this.value == 6) {
@@ -95,5 +95,5 @@ public class Card {
         }
         return name;
 
-    }*/
+    }
 }
