@@ -27,7 +27,7 @@ public class Bet {
                                 throw new NumberOutOfRangeException
                                         ("Number out of range. Must be in 1..100 inclusive:" + bet);
                         } catch (InputMismatchException e) {
-                            System.out.println("Input was not an integer");
+                            System.out.println("Input needs to be a number between 1-100");
                             //read new line and ignore
                             in.nextLine();
                         } catch (NumberOutOfRangeException e) {
