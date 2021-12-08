@@ -1,5 +1,5 @@
 public class Round {
-    public void newRoundStart(){
+    public void roleSwap(){
        for(int i = Main.MAX-1; i>=0;i--){
             if(i==0){
                 Main.players.get(i).setDealer(false);

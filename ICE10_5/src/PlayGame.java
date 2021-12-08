@@ -2,6 +2,7 @@ public class PlayGame {
     UI ui = new UI();
     DeckOfCards deck = new DeckOfCards();
     Bet bet = new Bet();
+    Round round=new Round();
 
 
     public void startGame() { //DONE!!!
@@ -9,6 +10,7 @@ public class PlayGame {
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
+        round.roleSwap(); //skifter dealer/challenger role
 
     }
 
