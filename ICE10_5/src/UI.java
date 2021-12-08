@@ -43,7 +43,7 @@ public class UI {
             if(input.equalsIgnoreCase("Q")){
                 break;
             }
-
+            Main.maxPlaceholder=Main.MAX;
            Main.MAX=Integer.parseInt(input);
             break;
         }
