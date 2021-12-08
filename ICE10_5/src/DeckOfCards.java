@@ -7,7 +7,7 @@ public class DeckOfCards {
     //cards=OGcards;
     String[] values = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
     String[] suit = {"Clubs", "Spades", "Diamonds", "Hearts"};
-
+    double[] cardValue = {};
     public DeckOfCards() {
         double cardValue=0.5;
         for (int i = 0; i < suit.length; i++) {
