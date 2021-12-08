@@ -41,6 +41,13 @@ public class Player {
     public void setDealer(boolean dealer) {
         isDealer = dealer;
     }
+    public double calculateHandValue(List<Double> handValue){
+        double totalValue=0;
+        for (double d:handValue){
+            totalValue+=d;
+        }
+        return totalValue;
+    }
 
     public String getName() {
         return name;

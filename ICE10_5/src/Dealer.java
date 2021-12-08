@@ -7,4 +7,4 @@ public class Dealer extends Player{
 
     // This automates the dealer's play
     }
-}
+
