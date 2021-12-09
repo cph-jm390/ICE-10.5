@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PlayGame {
     UI ui = new UI();
     DeckOfCards deck = new DeckOfCards();
@@ -28,10 +30,25 @@ public class PlayGame {
 
     //Hit or stand
     public void HitOrStand() {
+        Scanner scan = new Scanner(System.in);
         String command;
         char c;
         for (int i = 0; i < Main.players.size(); i++) {
-            if (Main.players.size() < 0) {
+            if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 0) {
+                System.out.println();
+                System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
+            }
+            do{
+                do{
+                    System.out.print(Main.players.get(i).getName() + " (H)it or (S)tand? ");
+                    command =scan.next();
+                    c = command.toUpperCase().charAt(0);
+                } while ( ! ( c == 'H' || c == 'S' ) );
+            if ( c == 'H' ) {
+                //Main.players.get(i).addCard;
+                System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
+            }
+        } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5 );
             }
         }
     }
