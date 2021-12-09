@@ -12,6 +12,9 @@ public class Round {
                 Main.players.get(i - 1).setDealer(true);
                 break;
             }
-        }
+        }for(int i=Main.MAX-1;i>=0;i--){
+           Main.players.get(i).setHasWon(false);
+    } 
+
     }
 }

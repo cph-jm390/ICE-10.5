@@ -59,7 +59,7 @@ public class UI {
            }
             List<Double> list=new ArrayList<>();
             lists.add(list);
-            Main.players.add(new Player(input,i,false,lists.get(i)));
+            Main.players.add(new Player(input,i,false,lists.get(i), false));
             i++;
 
         }

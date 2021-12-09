@@ -7,6 +7,8 @@ public class Player {
     private int playerScore;
     private boolean isDealer;
     private List<Double> handValue=new ArrayList<>();
+    private boolean hasWon;
+
 
     private ArrayList<Player> players=new ArrayList<>();
 
@@ -18,12 +20,21 @@ public class Player {
         this.players = players;
     }
 
-    public Player(String name, int playerNum, boolean isDealer,List<Double> handValue) {
+    public Player(String name, int playerNum, boolean isDealer,List<Double> handValue,boolean hasWon) {
         this.name = name;
         this.playerNum = playerNum;
         this.isDealer=isDealer;
         this.handValue=handValue;
+        this.hasWon=hasWon;
 
+    }
+
+    public boolean isHasWon() {
+        return hasWon;
+    }
+
+    public void setHasWon(boolean hasWon) {
+        this.hasWon = hasWon;
     }
 
     public List<Double> getHandValue() {
