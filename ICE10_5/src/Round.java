@@ -26,4 +26,22 @@ public class Round {
             Main.players.get(i).setHasWon(false);
         }
     }
+    public void setWinner(){
+        for (int i = 0; i < Main.MAX; i++) {
+            for (int j = 0; j < Main.MAX; j++) {
+                if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5) { //tjekker om player er over 10,5
+                    Main.players.get(i).setHasWon(false);
+
+                } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) < Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue()) && Main.players.get(j).isDealer()==true) {
+                    Main.players.get(i).setHasWon(false);
+                }else if (Main.players.get(i).isDealer()==true){
+                    Main.players.get(i).setHasWon(false);
+
+
+            }else{
+                    Main.players.get(i).setHasWon(true);
+                }
+        }
+        }
+    }
 }

@@ -66,8 +66,8 @@ public class PlayGame {
     public void settleBets() {
         System.out.println();
 
-        for (int i = 0; i < Main.players.size(); i++) {
-            for (int j = 0; j <= Main.MAX; j++) {
+        for (int i = 0; i < Main.MAX; i++) {
+            for (int j = 0; j < Main.MAX; j++) {
                 if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5) {
                     System.out.println(Main.players.get(i).getName() + " has busted");
 
