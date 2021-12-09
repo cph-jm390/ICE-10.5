@@ -25,6 +25,11 @@ public class Round {
             }
             Main.players.get(i).setHasWon(false);
         }
+        for (int i=0;i<=Main.players.size();i++){
+            for(int j=Main.players.get(i).getHandValue().size();j>=0;j--){
+                Main.players.get(i).getHandValue().remove(j);
+            }
+        }
     }
     public void setWinner(){
         for (int i = 0; i < Main.MAX; i++) {

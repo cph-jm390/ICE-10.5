@@ -13,8 +13,8 @@ public class PlayGame {
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
 
-        round.setWinner();
-        round.givePoints();
+        round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
+        round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
         round.roleSwap(); //skifter dealer/challenger role
 
     }
@@ -53,6 +53,7 @@ public class PlayGame {
                 } while ( ! ( c == 'H' || c == 'S' ) );
             if ( c == 'H' ) {
                 //Main.players.get(i).addCard;
+
                 System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
             }
         } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5 );

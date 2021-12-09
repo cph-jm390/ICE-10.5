@@ -13,7 +13,7 @@ public class Card {
         this.value = value;
         this.cardValue = cardValue;
     }
-    public Card(String s, String value){}
+
     public String getSuit(){
         return suit;
     }
