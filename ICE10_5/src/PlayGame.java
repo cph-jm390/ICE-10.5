@@ -13,6 +13,7 @@ public class PlayGame {
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
 
+        round.setWinner();
         round.givePoints();
         round.roleSwap(); //skifter dealer/challenger role
 
@@ -22,6 +23,7 @@ public class PlayGame {
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
 
+        round.setWinner();
         round.givePoints();
         round.roleSwap();
 
@@ -56,7 +58,7 @@ public class PlayGame {
         } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5 );
             }
         }
-    }
+
 
     //Dealers turn
     public void dealerTurn() {
