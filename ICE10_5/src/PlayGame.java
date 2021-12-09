@@ -10,6 +10,8 @@ public class PlayGame {
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
+
+        round.givePoints();
         round.roleSwap(); //skifter dealer/challenger role
 
     }
@@ -17,6 +19,9 @@ public class PlayGame {
     public void dealFirstSet() {
         bet.wagerBet(); //kan genbruges til hver runde
         deck.giveFirstSet(); //kan genbruges til hver runde
+
+        round.givePoints();
+        round.roleSwap();
 
     }
 
