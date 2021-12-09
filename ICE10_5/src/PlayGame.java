@@ -62,21 +62,24 @@ public class PlayGame {
         System.out.println();
 
         for (int i = 0; i < Main.players.size(); i++) {
-            if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5) {
-                System.out.println(Main.players.get(i).getName() + " has busted");
+            for (int j = 0; j <= Main.MAX; j++) {
+                if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5) {
+                    System.out.println(Main.players.get(i).getName() + " has busted");
 
-            } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <) {
-                //kan ikke calle dealercalculateTotal() && dealer.calculateTotal() <= 10.5 ) {
-                System.out.println(Main.players.get(i).getName() + " has lost");
+                } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) < Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue()) && Main.players.get(j).isDealer()==true) {
+                    //kan ikke calle dealercalculateTotal() && dealer.calculateTotal() <= 10.5 ) {
+                    System.out.println(Main.players.get(i).getName() + " has lost");
 
-            } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) == 10.5) {
-                System.out.println(Main.players.get(i).getName() + " has won with 10.5!");
+                } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) == 10.5) {
+                    System.out.println(Main.players.get(i).getName() + " has won with 10.5!");
 
-            } else {
-                System.out.println(Main.players.get(i).getName() + " has won");
+                } else {
+                    System.out.println(Main.players.get(i).getName() + " has won");
+                }
             }
         }
     }
+}
 
 //Hit or stand
 
