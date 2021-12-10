@@ -102,7 +102,6 @@ public class DeckOfCards {
     cards.remove(0);
     Main.players.get(i).setHandValue(list);
 
-
 }
 
     }
