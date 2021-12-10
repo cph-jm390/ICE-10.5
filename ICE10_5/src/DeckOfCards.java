@@ -68,25 +68,27 @@ public class DeckOfCards {
                 System.out.println();
                 System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
             }
+            if (Main.players.get(i).isDealer() == false) {
             do {
-                do {
                     System.out.print(Main.players.get(i).getName() + " (H)it or (S)tand? ");
                     command = scan.next();
                     c = command.toUpperCase().charAt(0);
-                } while (!(c == 'H' || c == 'S'));
-                if (c == 'H') {
-                    //Main.players.get(i).addCard;
-                    for (int k = 0; i < 9; i++) {
-                        System.out.println(cards.get(0) + " was drawn");
-                        list.add(cards.get(0).getCardValue());
-                        cards.remove(0);
-                        Main.players.get(k).setHandValue(list);
+
+                    while (!(c == 'H' || c == 'S')) ;
+                    if (c == 'H') {
+                        //Main.players.get(i).addCard;
+                        for (int k = 0; i < 9; i++) {
+                            System.out.println(cards.get(0) + " was drawn");
+                            list.add(cards.get(0).getCardValue());
+                            cards.remove(0);
+                            Main.players.get(k).setHandValue(list);
+                        }
+
+
+                        System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
                     }
-
-
-                    System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
-                }
-            } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5);
+                } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5);
+            }
         }
     }
 
