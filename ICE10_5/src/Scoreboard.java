@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Scoreboard extends Player {
@@ -6,11 +7,10 @@ public class Scoreboard extends Player {
 
     private ArrayList <Integer> points=new ArrayList<>();
 
-    public Scoreboard(String name, int playerNum, boolean isDealer, List<Double> handValue, ArrayList<Integer> points) {
-        super(name, playerNum, isDealer,handValue);
-        this.points=points;
+    public Scoreboard(String name, int playerNum, boolean isDealer, List<Double> handValue, boolean hasWon, ArrayList<Integer> points) {
+        super(name, playerNum, isDealer, handValue, hasWon);
+        this.points = points;
     }
-
 
     public ArrayList<Integer> getPoints() {
         return points;
@@ -22,13 +22,28 @@ public class Scoreboard extends Player {
 
 
     //virker måske ikke.
-    public void printScores() {
+    /*Public void printScores() {
         int total = 0;
         for(int i = 0; i < Main.players.get(i).getPlayerScore(); i++)
         {
             System.out.println(Main.players.get(i).getName() + "has a score of" + Main.players.get(i).getPlayerScore());
             total += Main.players.get(i).getPlayerScore();
         }
+    }*/
+
+
+    public void printScores() {
+        Collections.sort(Main.players, new SortByPoints());
+
+        // Displays the final score board
+        System.out.println();
+        System.out.println("\n***** Lets look at the scoreboard! *****\n");
+        for (int i=0; i<Main.players.size(); i++)
+            System.out.println(Main.players.get(i).getPlayerScore());
     }
 }
+
+
+
+
 
