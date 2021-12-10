@@ -51,7 +51,7 @@ public class UI {
     }
     public void createPlayer() {
         int i = 0;
-        ArrayList<List<Double>> lists=new ArrayList<>();
+            ArrayList<List<Double>> lists=new ArrayList<>();
         while(i<Main.MAX){
             String input = getUserInput("Navn? (eller Q for at quitte) ");
             if(input.equalsIgnoreCase("Q")){
