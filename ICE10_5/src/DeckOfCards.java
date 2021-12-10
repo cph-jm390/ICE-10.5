@@ -57,38 +57,52 @@ public class DeckOfCards {
 
     }
 
-    public void HitOrStand() {
+    public void HitOrStand(boolean status) {
 
         List<Double> list = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         String command;
-        char c;
+
         for (int i = 0; i < Main.players.size(); i++) {
-            if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 0) {
-                System.out.println();
-                System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
-            }
-            do {
-                do {
-                    System.out.print(Main.players.get(i).getName() + " (H)it or (S)tand? ");
-                    command = scan.next();
-                    c = command.toUpperCase().charAt(0);
-                } while (!(c == 'H' || c == 'S'));
-                if (c == 'H') {
-                    //Main.players.get(i).addCard;
-                    for (int k = 0; i < 9; i++) {
-                        System.out.println(cards.get(0) + " was drawn");
-                        list.add(cards.get(0).getCardValue());
-                        cards.remove(0);
-                        Main.players.get(k).setHandValue(list);
-                    }
-
-
+            char c='a';
+            if (Main.players.get(i).isDealer() == status) {
+                if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 0) {
                     System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
                 }
-            } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5);
+                for(int j=0;i<9;i++) {
+                    do {
+                        do {
+                            System.out.print(Main.players.get(i).getName() + " (H)it or (S)tand? ");
+                            command = scan.next();
+                            c = command.toUpperCase().charAt(0);
+                        } while (!(c == 'H' || c == 'S'));
+                        if (c=='S'){
+                            break;
+                        }
+                        if (c == 'H') {
+                            for (int k = 0; i < 9; i++) {
+
+                                System.out.println(cards.get(0) + " was drawn");
+                                list.add(cards.get(0).getCardValue());
+                                cards.remove(0);
+                                Main.players.get(i).setHandValue(list);
+                                if(Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue())>10.5){
+                                    break;
+                                }
+                                break;
+                            }
+
+
+                            System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
+                        }
+                    } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5);
+                    break;
+                }
+            }
         }
+
     }
+
 
     public ArrayList<Card> getDeck() {
         return cards;
