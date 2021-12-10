@@ -21,5 +21,14 @@ public class Scoreboard extends Player {
     }
 
 
-
+    //virker måske ikke.
+    public void printScores() {
+        int total = 0;
+        for(int i = 0; i < Main.players.get(i).getPlayerScore(); i++)
+        {
+            System.out.println(Main.players.get(i).getName() + "has a score of" + Main.players.get(i).getPlayerScore());
+            total += Main.players.get(i).getPlayerScore();
+        }
+    }
 }
+
