@@ -64,6 +64,7 @@ public class DeckOfCards {
         String command;
 
         for (int i = 0; i < Main.players.size(); i++) {
+
             char c='a';
             if (Main.players.get(i).isDealer() == status) {
                 if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 0) {
@@ -98,6 +99,7 @@ public class DeckOfCards {
                     } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5);
                     break;
                 }
+
             }
         }
 

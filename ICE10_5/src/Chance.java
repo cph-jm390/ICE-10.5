@@ -1,3 +1,9 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
 public class Chance {
     private int chanceNum;
     private int chanceNum2;
@@ -12,11 +18,33 @@ public class Chance {
 
     }
 
-    public int pickChanceCard(){
-        chanceNum = (int) (52*Math.random() + 1);
+    public int pickChanceCard() {
+        chanceNum = (int) (52 * Math.random() + 1);
         return chanceNum;
     }
 
+    public void fileReaderChance() throws FileNotFoundException {
+        Scanner s = new Scanner(new File("src/chancecard.txt"));
+        ArrayList<String> chanceCard = new ArrayList<String>();
+        String line = "";
+        while (s.hasNext()){
+            line = s.nextLine();
+            line.split("-");
+            chanceCard.add(s.next());
+        }
+        s.close();
+        System.out.println(chanceCard);
+    }
+
+}
+    /* for (int i = 0; i < chanceCard.size(); i++)
+            {
+            // generating the index using Math.random()
+            int index = (int)(Math.random() * chanceCard.size());
+
+            System.out.println("Your Chance is :"
+            + chanceCard.get(index));
+    */
     public int getChanceNum() {
         return chanceNum;
     }
