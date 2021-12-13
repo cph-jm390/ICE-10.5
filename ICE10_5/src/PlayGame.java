@@ -18,7 +18,7 @@ public class PlayGame {
     Round round=new Round();
     boolean challenger=false;
     boolean dealer=true;
-
+    Scoreboard scores=new Scoreboard();
 
 
     public void startGame() { //DONE!!!
@@ -30,7 +30,7 @@ public class PlayGame {
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
         round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
-        //Chance card
+        scores.printScores();
         //
         round.roleSwap(); //skifter dealer/challenger role
 

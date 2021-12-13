@@ -9,6 +9,7 @@ public class Bet {
     }
 
     public void wagerBet() {
+        int bet=0;
         for (int i = 0; i < Main.players.size(); i++) {
             if (Main.players.size() > 0) {
                 if (Main.players.get(i).isDealer() == false) {
@@ -16,12 +17,12 @@ public class Bet {
                     do {
                         try {
                             System.out.print("How much do you want to a bet(sips):" + Main.players.get(i).getName() + "?");
-                            int bet = (int) in.nextDouble();
-                            System.out.println("You wagered " + bet);
+                            bet = (int) in.nextDouble();
+                            System.out.println(Main.players.get(i).getName() +" wagered " + bet+" sips");
                             //read num value from keyboard
-                            bet = in.nextInt();
+
                             //read new line and ignore
-                            in.nextLine();
+
 
                             if (bet < 0 || bet > 101)
                                 throw new NumberOutOfRangeException
@@ -37,7 +38,7 @@ public class Bet {
                             System.exit(0);
                         }
                     } while (bet < 0 || bet > 101);
-                    System.out.format("Thank you. You entered %d\n", bet);
+
                 }
 
             }
@@ -49,15 +50,10 @@ public class Bet {
 
     public void rewardBet() {
 
-        // if round end = true print...
+
         System.out.println("You win! You now have " + bet + "sips or shots to give out.");
     }
-/// ikke færdigt
 
-    public void rewardBets() {
-        System.out.println();
-
-    }
 }
 
 

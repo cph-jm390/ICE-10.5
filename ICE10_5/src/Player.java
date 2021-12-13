@@ -10,15 +10,7 @@ public class Player {
     private boolean hasWon;
 
 
-    /*private ArrayList<Player> players=new ArrayList<>();
 
-    public ArrayList<Player> getPlayers() {
-        return players;
-    }
-
-    public void setPlayers(ArrayList<Player> players) {
-        this.players = players;
-    }*/
 
     public Player(String name, int playerNum, boolean isDealer,List<Double> handValue,boolean hasWon) {
         this.name = name;
@@ -91,8 +83,7 @@ public class Player {
                 ", playerNum=" + playerNum +
                 ", playerScore=" + playerScore +
                 ", isDealer=" + isDealer +
-                ", handValue=" + handValue/* +
-                ", players=" + players*/ +
+                ", handValue=" + handValue +
                 '}';
     }
 }
