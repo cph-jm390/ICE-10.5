@@ -11,7 +11,7 @@ public class Scoreboard{
 
 
     public void printScores() {
-        for(int i=0;i<Main.players.size()-1;i++)
+        for(int i=0;i<=Main.players.size()-1;i++)
             if (Main.points.get(i)!=null){
             System.out.println(Main.players.get(i).getName()+"         has "+Main.points.get(i)+" points");
     }else{

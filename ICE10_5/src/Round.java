@@ -22,7 +22,7 @@ public class Round {
     }
     public void givePoints(){
         List<Double> resetter=new ArrayList<>();
-        for (int i=Main.MAX-1;i>=0;i--){
+        for (int i=0;i<Main.players.size();i++){
             if (Main.players.get(i).isHasWon()==true){
                 Main.points.add(i,1);
                 Main.players.get(i).setHasWon(false);
@@ -32,7 +32,7 @@ public class Round {
         }
         for (int i=0;i<Main.players.size();i++){
             for(int j=Main.players.get(i).getHandValue().size()-1;j>=0;j--){
-                if (Main.players.get(i).getHandValue().remove(j)==null){
+                if (Main.players.get(i).getHandValue().size()==0){
                     break;
                 }
                 //Main.players.get(i).getHandValue().remove(0);
