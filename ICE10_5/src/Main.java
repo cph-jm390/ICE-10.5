@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
-
+    static List<Double> handCounter=new ArrayList<>();
     static ArrayList<Player> players = new ArrayList<Player>();
     static ArrayList<Integer> points=new ArrayList<>();
     static ArrayList<String> chanceCards=new ArrayList<>();

@@ -23,23 +23,28 @@ public class DeckOfCards {
     }
 
     public void giveFirstSet() {
+        List<Double> resetter = new ArrayList<>();
 
         //shuffle the deck when its created
         OGcards = cards;
         Collections.shuffle(this.cards);
         int i = 0;
         for (Player player : Main.players) {
-
+            Main.handCounter.add(cards.get(0).getCardValue());
+            Main.players.get(i).setHandValue(Main.handCounter);
+            Main.handCounter=resetter;
             System.out.println(Main.players.get(i).getName() + " recieves the following card: " + cards.get(0));
             cards.remove(0);
             i++;
+
         }
 
     }
 
     public void HitOrStand(boolean status) {
 
-        List<Double> list = new ArrayList<>();
+        List<Double> resetter = new ArrayList<>();
+        Main.handCounter=resetter;
         Scanner scan = new Scanner(System.in);
         String command;
 
@@ -58,16 +63,20 @@ public class DeckOfCards {
                             c = command.toUpperCase().charAt(0);
                         } while (!(c == 'H' || c == 'S'));
                         if (c=='S'){
+                            Main.handCounter=resetter;
                             break;
                         }
                         if (c == 'H') {
                             for (int k = 0; i < 9; i++) {
 
                                 System.out.println(cards.get(0) + " was drawn");
-                                list.add(cards.get(0).getCardValue());
+                                Main.handCounter.add(cards.get(0).getCardValue());
                                 cards.remove(0);
-                                Main.players.get(i).setHandValue(list);
+                                Main.players.get(i).setHandValue(Main.handCounter);
                                 if(Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue())>10.5){
+                                    System.out.println("You busted, noob");
+                                    Main.handCounter=resetter;
+
                                     break;
                                 }
                                 break;

@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Round {
     public void roleSwap(){
        for(int i = Main.MAX-1; i>=0;i--){
@@ -18,6 +21,7 @@ public class Round {
 
     }
     public void givePoints(){
+        List<Double> resetter=new ArrayList<>();
         for (int i=Main.MAX-1;i>=0;i--){
             if (Main.players.get(i).isHasWon()==true){
                 Main.points.add(i,1);
@@ -31,7 +35,9 @@ public class Round {
                 if (Main.players.get(i).getHandValue().remove(j)==null){
                     break;
                 }
-                Main.players.get(i).getHandValue().remove(j);
+                //Main.players.get(i).getHandValue().remove(0);
+                Main.players.get(i).setHandValue(resetter);
+                System.out.println(Main.players.get(i).getHandValue());
             }break;
         }
     }

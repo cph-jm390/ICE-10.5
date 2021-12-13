@@ -25,7 +25,7 @@ public class PlayGame {
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet(); //kan genbruges til hver runde
-        deck.giveFirstSet(); //kan genbruges til hver runde
+        //deck.giveFirstSet(); //kan genbruges til hver runde
         deck.HitOrStand(challenger);
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
