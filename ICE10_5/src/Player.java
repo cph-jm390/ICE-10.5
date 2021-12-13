@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//TODO HUSK GREYED OUTS
 public class Player {
    public String name;
     private int playerNum;
@@ -10,7 +10,7 @@ public class Player {
     private boolean hasWon;
 
 
-    private ArrayList<Player> players=new ArrayList<>();
+    /*private ArrayList<Player> players=new ArrayList<>();
 
     public ArrayList<Player> getPlayers() {
         return players;
@@ -18,7 +18,7 @@ public class Player {
 
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
-    }
+    }*/
 
     public Player(String name, int playerNum, boolean isDealer,List<Double> handValue,boolean hasWon) {
         this.name = name;
@@ -91,8 +91,8 @@ public class Player {
                 ", playerNum=" + playerNum +
                 ", playerScore=" + playerScore +
                 ", isDealer=" + isDealer +
-                ", handValue=" + handValue +
-                ", players=" + players +
+                ", handValue=" + handValue/* +
+                ", players=" + players*/ +
                 '}';
     }
 }

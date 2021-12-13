@@ -16,7 +16,7 @@ public class DeckOfCards {
         double cardValue;
         for (int i = 0; i < suit.length; i++) {
             for (int j = 0; j < values.length; j++) {
-                if (values[i] == "Ace") {
+                if (values[i] == "A") {
                     cardValue = 0.5;
                 } else if (values[i] == "2") {
                     cardValue = 2.0;

@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,8 +20,8 @@ public class Chance {
     }
 
     public int pickChanceCard() {
-        chanceNum = (int) (52 * Math.random() + 1);
-        return chanceNum;
+        Collections.shuffle();
+
     }
 
     public void fileReaderChance() throws FileNotFoundException {
@@ -36,7 +37,7 @@ public class Chance {
         System.out.println(chanceCard);
     }
 
-}
+
     /* for (int i = 0; i < chanceCard.size(); i++)
             {
             // generating the index using Math.random()
