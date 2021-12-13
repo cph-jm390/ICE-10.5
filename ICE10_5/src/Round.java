@@ -22,6 +22,7 @@ public class Round {
             if (Main.players.get(i).isHasWon()==true){
                 Main.points.add(i,1);
                 Main.players.get(i).setHasWon(false);
+
             }
             Main.players.get(i).setHasWon(false);
         }

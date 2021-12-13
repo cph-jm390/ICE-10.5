@@ -7,14 +7,6 @@ public class Challenger extends Player
         super(name, playerNum,isDealer,handValue, hasWon);
     }
 
-   /* public void hitOrStand(){
-        double upperLimitOfValue=10.5;
-        while(sumOfHandValue()<upperLimitOfValue){
-            hit();
-        }
-    }
-    public void hit() {
 
-    }*/
 }
 
