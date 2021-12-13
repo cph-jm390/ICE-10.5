@@ -42,7 +42,7 @@ public class DeckOfCards {
     }
 
     public void HitOrStand(boolean status) {
-
+        Collections.shuffle(this.cards);
         List<Double> resetter = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         String command;
