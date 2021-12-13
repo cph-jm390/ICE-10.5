@@ -44,7 +44,6 @@ public class DeckOfCards {
     public void HitOrStand(boolean status) {
 
         List<Double> resetter = new ArrayList<>();
-        Main.handCounter=resetter;
         Scanner scan = new Scanner(System.in);
         String command;
 

@@ -1,4 +1,6 @@
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PlayGame {
@@ -22,11 +24,13 @@ public class PlayGame {
 
 
     public void startGame() { //DONE!!!
+        List<Double> resetter=new ArrayList<>();
         ui.selectPlayerAmount();
         ui.createPlayer(); //makes last player dealer
         bet.wagerBet(); //kan genbruges til hver runde
         //deck.giveFirstSet(); //kan genbruges til hver runde
         deck.HitOrStand(challenger);
+        Main.handCounter=resetter;
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
         round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
