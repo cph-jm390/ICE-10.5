@@ -11,10 +11,12 @@ public class Scoreboard{
 
 
     public void printScores() {
-        for(int i=0;i<Main.players.size();i++)
+        for(int i=0;i<Main.players.size()-1;i++)
             if (Main.points.get(i)!=null){
             System.out.println(Main.players.get(i).getName()+"         has "+Main.points.get(i)+" points");
-    }
+    }else{
+                System.out.println(Main.players.get(i)+"         has 0 points");
+            }
 }
 }
 
