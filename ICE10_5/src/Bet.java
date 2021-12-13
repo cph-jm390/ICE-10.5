@@ -24,7 +24,7 @@ public class Bet {
                             //read new line and ignore
 
 
-                            if (bet < 0 || bet > 101)
+                            if (bet <= 0 || bet >= 101)
                                 throw new NumberOutOfRangeException
                                         ("Number out of range. Must be in 1..100 inclusive:" + bet);
                         } catch (InputMismatchException e) {
