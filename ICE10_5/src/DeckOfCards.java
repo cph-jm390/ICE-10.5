@@ -8,36 +8,16 @@ public class DeckOfCards {
     ArrayList<Card> OGcards = new ArrayList<Card>();
     Card card;
 
-    String[] values = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+    String[] values = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
     String[] suit = {"Clubs", "Spades", "Diamonds", "Hearts"};
-    double[] cardValue = {};
+    double[] cardValue = {0.5,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,10.0,10.0,10.0};
 
     public DeckOfCards() {
-        double cardValue;
+
         for (int i = 0; i < suit.length; i++) {
             for (int j = 0; j < values.length; j++) {
-                if (values[i] == "A") {
-                    cardValue = 0.5;
-                } else if (values[i] == "2") {
-                    cardValue = 2.0;
-                } else if (values[i] == "3") {
-                    cardValue = 3.0;
-                } else if (values[i] == "4") {
-                    cardValue = 4.0;
-                } else if (values[i] == "5") {
-                    cardValue = 5.0;
-                } else if (values[i] == "6") {
-                    cardValue = 6.0;
-                } else if (values[i] == "7") {
-                    cardValue = 7.0;
-                } else if (values[i] == "8") {
-                    cardValue = 8.0;
-                } else if (values[i] == "9") {
-                    cardValue = 9.0;
-                } else {
-                    cardValue = 10.0;
-                }
-                this.cards.add(new Card(suit[i], values[j], cardValue));
+
+                this.cards.add(new Card(suit[i], values[j], cardValue[j]));
             }
         }
     }
