@@ -16,7 +16,6 @@ public class PlayGame {
     DeckOfCards deck = new DeckOfCards();
     Bet bet = new Bet();
     Round round=new Round();
-    Scoreboard scores=new Scoreboard();
     boolean challenger=false;
     boolean dealer=true;
 
@@ -31,7 +30,8 @@ public class PlayGame {
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
         round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
-        scores.printScores(); // printer score
+        //Chance card
+        //
         round.roleSwap(); //skifter dealer/challenger role
 
     }
