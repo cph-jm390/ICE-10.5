@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 
 public class Main {
+
     static ArrayList<Player> players = new ArrayList<Player>();
     static ArrayList<Integer> points=new ArrayList<>();
+    static ArrayList<String> chanceCards=new ArrayList<>();
 
 
 

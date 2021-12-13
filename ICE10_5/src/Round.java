@@ -25,10 +25,13 @@ public class Round {
             }
             Main.players.get(i).setHasWon(false);
         }
-        for (int i=0;i<=Main.players.size();i++){
-            for(int j=Main.players.get(i).getHandValue().size();j>=0;j--){
+        for (int i=0;i<Main.players.size();i++){
+            for(int j=Main.players.get(i).getHandValue().size()-1;j>=0;j--){
+                if (Main.players.get(i).getHandValue().remove(j)==null){
+                    break;
+                }
                 Main.players.get(i).getHandValue().remove(j);
-            }
+            }break;
         }
     }
     public void setWinner(){

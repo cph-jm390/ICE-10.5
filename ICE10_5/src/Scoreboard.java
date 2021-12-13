@@ -33,8 +33,10 @@ public class Scoreboard /*extends Player*/ {
 
 
     public void printScores() {
-        for(int i=0;i<Main.players.size();i++)
-            System.out.println(Main.players.get(i).getName()+"         has "+Main.points.get(i)+" points");
+        for (int i = 0; i < Main.players.size(); i++)
+            if (Main.points.get(i) != null) {
+                System.out.println(Main.players.get(i).getName() + "         has " + Main.points.get(i) + " points");
+            }
     }
 }
 

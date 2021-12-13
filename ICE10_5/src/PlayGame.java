@@ -1,6 +1,17 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class PlayGame {
+    Chance chance;
+
+    {
+        try {
+            chance = new Chance();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     UI ui = new UI();
     DeckOfCards deck = new DeckOfCards();
     Bet bet = new Bet();
@@ -8,6 +19,7 @@ public class PlayGame {
     Scoreboard scores=new Scoreboard();
     boolean challenger=false;
     boolean dealer=true;
+
 
 
     public void startGame() { //DONE!!!

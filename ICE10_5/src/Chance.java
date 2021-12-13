@@ -13,8 +13,34 @@ public class Chance {
         return 0;
     }
 
-    public int chanceRoll(){
-        chanceNum = (int) (6*Math.random() + 1);
+    public Chance() throws FileNotFoundException {
+        ArrayList<String[]> holderarr1 = new ArrayList<>();
+        File file = new File("src/chancecard.txt");
+        Scanner s = new Scanner(file);
+        ArrayList<String> holderarr2 = new ArrayList<>();
+        String line = "";
+        while (s.hasNext()) {
+            line = s.nextLine();
+            holderarr1.add(line.split("-"));
+        }
+        s.close();
+        String saver = "";
+        for (String[] arr : holderarr1) {
+            for (String str : arr) {
+                holderarr2.add(str);
+            }
+
+        }
+        String lastQuestion = "";
+
+        for (int i = 0; i < holderarr2.size() - 1; i += 2) {
+            lastQuestion = holderarr2.get(i) + "\r\n" + holderarr2.get(i + 1);
+            Main.chanceCards.add(lastQuestion);
+        }
+    }
+
+    /*public int chanceRoll() {
+        chanceNum = (int) (6 * Math.random() + 1);
         return chanceNum;
 
     }
@@ -25,17 +51,31 @@ public class Chance {
     }
 
     public void fileReaderChance() throws FileNotFoundException {
-        Scanner s = new Scanner(new File("src/chancecard.txt"));
-        ArrayList<String> chanceCard = new ArrayList<String>();
+        ArrayList<String[]> holderarr1 = new ArrayList<>();
+        File file = new File("src/chancecard.txt");
+        Scanner s = new Scanner(file);
+        ArrayList<String> holderarr2 = new ArrayList<>();
         String line = "";
-        while (s.hasNext()){
+        while (s.hasNext()) {
             line = s.nextLine();
-            line.split("-");
-            chanceCard.add(s.next());
+            holderarr1.add(line.split("-"));
         }
         s.close();
-        System.out.println(chanceCard);
-    }
+        String saver = "";
+        for (String[] arr : holderarr1) {
+            for (String str : arr) {
+                holderarr2.add(str);
+            }
+
+        }
+        String lastQuestion = "";
+
+        for (int i = 0; i < holderarr2.size() - 1; i += 2) {
+            lastQuestion = holderarr2.get(i) + "\r\n" + holderarr2.get(i + 1);
+            Main.chanceCards.add(lastQuestion);
+        }
+
+
 
 
     /* for (int i = 0; i < chanceCard.size(); i++)
@@ -46,21 +86,22 @@ public class Chance {
             System.out.println("Your Chance is :"
             + chanceCard.get(index));
     */
-    public int getChanceNum() {
-        return chanceNum;
-    }
+       /* public int getChanceNum () {
+            return chanceNum;
+        }
 
-    public void setChanceNum(int chanceNum) {
-        this.chanceNum = chanceNum;
-    }
+        public void setChanceNum ( int chanceNum){
+            this.chanceNum = chanceNum;
+        }
 
-    public int getChanceNum2() {
-        return chanceNum2;
-    }
+        public int getChanceNum2 () {
+            return chanceNum2;
+        }
 
-    public void setChanceNum2(int chanceNum2) {
-        this.chanceNum2 = chanceNum2;
-    }
+        public void setChanceNum2 ( int chanceNum2){
+            this.chanceNum2 = chanceNum2;
+        }
+    }*/
 }
 
 
