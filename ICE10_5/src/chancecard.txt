@@ -32,7 +32,7 @@ Dealer picks a player. The player can't say no for the next 3 rounds. It would b
 Pick an animal. Everybody BUT you must imitate the sound the animal makes. The worst person at imitating takes a shot.
 -
 “WATERFALL!”
-Yep its time, get your drink and start chuggin. All players start drinking their beverage at the same time. No player can stop drinking until the player to their left stops. But you already knew that.
+Yep its time, get your drink and start chuggin'. All players start drinking their beverage at the same time. No player can stop drinking until the player to their left stops. But you already knew that.
 -
 “Height Matters”
 Everybody who is shorter than you drinks 5 sips. BUT but height doesn’t matter… HERE IT DOES!
@@ -49,7 +49,7 @@ Get your best chinese ready. For this challenge, everyone must say "BING CHILLIN
 You'll never see it coming; just like John Xena. This card can be saved for later.
 -
 "Double or nothing"
-Your last wager is doubled. If double the amount exceeds 6 and you lost this round, transfer the amount onto the next phase.
+Your last wager is doubled. If double the amount exceeds 6, and you lost this round, transfer the amount onto the next phase.
 Though if you won, give out double the amount of sips that you wagered.
 -
 "Captain Morgan"
@@ -70,7 +70,7 @@ All other players pour a shot's worth of their drink into a cup, YOU choose who 
 Last person to get into the bathroom has to drink 5 sips! LET THERE BE CAOS!
 -
 "The Peep Game"
-Count up, say peep if you can divide the number by 7 or it has a 7 in it. The person that fucks up drinks 4 sips.
+Count up, say peep if you can divide the number by 7, or it has a 7 in it. The person that fucks up drinks 4 sips.
 -
 "Bust a rhyme"
 Say a word everybody have to say a word that rhymes with your word, going clockwise. The one who can't rhyme AKA a kindergarten student drinks 4 sips.
@@ -91,7 +91,7 @@ The last person that had sex, has to drink 4 sips. If you're a virgin, chug your
 The players collectively point out the biggest edgelord in the group. Because of the players selfdestructive tendencies, the player takes 4 sips.
 -
 "Heisenberg"
-You're not in danger, you ARE the danger. As the you're the meth kingpin himself/herself, anyone who dared giving out sips to you this turn, has to drink the same amount themselves.
+You're not in danger, you ARE the danger. As the meth kingpin himself/herself, anyone who dared giving out sips to you this turn, has to drink the same amount themselves.
 -
 "Fortnite"
 The person who drew this card is truly unfortunate, as they have to do a Fortnite dance within 5 seconds of finishing reading this.
@@ -109,13 +109,13 @@ Choose a person to be the imposter in secret (document it somehow), When the imp
 Choose a number in secret (document it somehow), and whoever wagers that amount and wins, has to drink that amount instead. This card is active till it happens
 -
 "Is This The Power of A God?"
-You decide what the others have to wager next round. Max 12 sips. However be careful they could win...
+You decide what the others have to wager next round. Max 12 sips. However, be careful they could win...
 -
 "A Battle For The Ages"
-Challenge the player with highest score to a battle of Rock, Paper, Scissors. The loser drinks 5 sips. If you yourself are the highest scoring player... well you do the math.
+Challenge the player with the highest score to a battle of Rock, Paper, Scissors. The loser drinks 5 sips. If you yourself are the highest scoring player... well you do the math.
 -
 "Wild Wild West"
-You now have 3 bullets to shoot of your finger gun. Each shot is 5 sips. You can save em or shoot em now like its the real wild west! YEEHAW!
+You now have 3 bullets to shoot of your finger gun. Each shot is 5 sips. You can save em or shoot em now like it's the real wild west! YEEHAW!
 -
 "I Hate Fruits"
 If you own an Apple product drink 2 sips for each product you own.
@@ -124,7 +124,7 @@ If you own an Apple product drink 2 sips for each product you own.
 All winning wagers next round are yours to give, but if they lose, you have to drink the wager as well.
 -
 "Mr Bean"
-You can only speak like Mr Bean the entire next round. If you say a "real" word you have to drink 7 sips. And if you dont know who Mr Bean is you drink 8!
+You can only speak like Mr Bean the entire next round. If you say a "real" word you have to drink 7 sips. And if you don't know who Mr Bean is you drink 8!
 -
 "I'm here to kick ass..."
 If you recently finished your drink, or chug your drink right now, choose someone to chug as well.
@@ -134,4 +134,13 @@ Finish your drink.
 -
 "Dealer oh Dealer"
 Not always fun being the dealer, but this time it is. Give out 10 sips.
+-
+"Funniest shit I've ever seen"
+For the next turn you've turned into a pickle, meaning you can only wager your bet, but your fellow players get to decide whether to hit or stand. Comedy at its best.
+-
+"Where's the lamb sauce?!"
+Your fellow players have forgotten the lamb sauce. In your frustration, you verbally assault the chefs, intimidating them, and preventing them all from dealing out sips to you, for the next round.
+-
+"Alexa, play BFG Division"
+You ask Alexa to turn on BFG Division by Mick Gordon, and start chugging your drink, like the absolute madlad you are.
 -
