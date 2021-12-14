@@ -32,9 +32,11 @@ public class PlayGame {
         bet.wagerBet(); //kan genbruges til hver runde
         System.out.println("");
         //deck.giveFirstSet(); //kan genbruges til hver runde
-        System.out.println(Main.players.size());
+        //System.out.println(Main.players.size()); //printer bare player size ikke andet
         deck.HitOrStand(challenger);
         Main.handCounter=resetter;
+        System.out.println("");
+        System.out.println("Dealers turn");
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
         round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
