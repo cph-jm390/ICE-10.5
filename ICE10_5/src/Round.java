@@ -28,7 +28,11 @@ public class Round {
         List<Double> resetter=new ArrayList<>();
 
         for (int i=0;i<Main.players.size();i++){
-
+            for (int k=0;k<Main.players.size();k++) {
+                if ((Main.players.get(i).isDealer() == true) && (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5)&&Main.players.get(k).calculateHandValue(Main.players.get(k).getHandValue()) <= 10.5) {
+                    Main.players.get(k).setHasWon(true);
+                }
+            }
             if (Main.players.get(i).isHasWon()==true){
 
                 Main.points.add(i,Main.points.get(i)+1);
