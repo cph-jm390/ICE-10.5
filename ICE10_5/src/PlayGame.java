@@ -26,8 +26,11 @@ public class PlayGame {
     public void startGame() { //DONE!!!
         List<Double> resetter=new ArrayList<>();
         ui.selectPlayerAmount();
+        System.out.println("");
         ui.createPlayer(); //makes last player dealer
+        System.out.println("");
         bet.wagerBet(); //kan genbruges til hver runde
+        System.out.println("");
         //deck.giveFirstSet(); //kan genbruges til hver runde
         System.out.println(Main.players.size());
         deck.HitOrStand(challenger);
