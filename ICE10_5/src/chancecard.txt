@@ -1,141 +1,188 @@
 "Drunken Dealer"
-The dealer is looking thirsty! Take a sip for each player in the game!
+The dealer is looking thirsty!
+Take a sip for each player in the game!
 -
 "Eye For An Eye"
-The dealer rolls the dice and gives an amount of sips equals to the amount of eyes to a player. The dealer drinks the same amount.
+The dealer rolls the dice and gives an amount of sips equals to the amount of eyes to a player.
+The dealer drinks the same amount.
 -
 "Gimme' A Break"
 The player with the lowest score gets a free pass next time 'a drink is needed'.
+You lucky bastard
 -
 "Come At Me, Bro!"
-The player with the highest score has to drink twice as much next round. Yeah, nobody likes you.
+The player with the highest score has to drink twice as much next round.
+Yeah, nobody likes you.
 -
 "Worship Me"
-Get 10 sips to give out. Suddenly everyone likes you. Funny, eh?
+Get 10 sips to give out.
+Suddenly everyone likes you. Funny, eh?
 -
 "Cheers!"
-Everybody takes a sip (or 2, but who really cares).
+Everybody takes a sip.
+Or 2, but who really cares.
 -
 "Lady Luck, Take The Wheel!"
-The dealer rolls the dice. If the dice hits 6, everybody BUT the dealer drinks 3 sips. If it doesn't, dealer drinks 3 sips.
+The dealer rolls the dice. If the dice hits 6, everybody BUT the dealer drinks 3 sips.
+If it doesn't, dealer drinks 3 sips.
 -
 "A Score To Settle"
-The player with the highest score has to chug the rest of his/her/their/its drink. Not so cool being on top now?
+The player with the highest score has to chug the rest of his/her/their/its drink.
+Not so cool being on top now?
 -
 "Simon Says: DRINK!"
-Dealer is Simon, do as he says, first to fuck up drinks 3 sips. Imagine not being able to follow instructions lmao.
+Dealer is Simon, do as he says, first to fuck up drinks 3 sips.
+Imagine not being able to follow instructions lmao.
 -
 "No! I Mean Yes!?"
-Dealer picks a player. The player can't say no for the next 3 rounds. It would be a shame if that were to be abused.
+Dealer picks a player. The player can't say no for the next 3 rounds.
+It would be a shame if that were to be abused.
 -
 ”Woof”
-Pick an animal. Everybody BUT you must imitate the sound the animal makes. The worst person at imitating takes a shot.
+Pick an animal. Everybody BUT you must imitate the sound the animal makes.
+The worst person at imitating takes a shot.
 -
 “WATERFALL!”
-Yep its time, get your drink and start chuggin'. All players start drinking their beverage at the same time. No player can stop drinking until the player to their left stops. But you already knew that.
+Yep its time, get your drink and start chuggin'. All players start drinking their beverage at the same time.
+No player can stop drinking until the player to their left stops. But you already knew that.
 -
 “Height Matters”
-Everybody who is shorter than you drinks 5 sips. BUT but height doesn’t matter… HERE IT DOES!
+Everybody who is shorter than you drinks 5 sips.
+BUT but height doesn’t matter… HERE IT DOES!
 -
 “One In The Chamber”
-Dealer get your fingergun, and shoot another player. That player now must chug their drink. This power can be used 1 time, but you can save it throughout the game. Use it when you feel like it.
+Dealer get your fingergun, and shoot another player. That player now must chug their drink.
+This power can be used 1 time, but you can save it throughout the game. Use it when you feel like it.
 -
 “Extreme Category”
-Yep, it’s a category, Dealer chooses the category and everybody takes turns naming something within the category. HOWEVER, since it's extreme we have 8 sips on the line for the person who fails to name something within the category!
+Yep, it’s a category, Dealer chooses the category and everybody takes turns naming something within the category.
+HOWEVER, since it's extreme we have 8 sips on the line for the person who fails to name something within the category!
 -
 "John Xena"
-Get your best chinese ready. For this challenge, everyone must say "BING CHILLING", and the last one to say it, has to take a sip for each player in the game. You'll never see it coming; just like John Xena. This card can be saved for later.
+Get your best chinese ready. For this challenge, everyone must say "BING CHILLING".The last one to say it, has to take a sip for each player in the game.
+You'll never see it coming; just like John Xena. This card can be saved for later.
 -
 "Double or nothing"
-Your last wager is doubled. If double the amount exceeds 6 and you lost this round, transfer the amount onto the next phase. Though if you won, give out double the amount of sips that you wagered.
+Your last wager is doubled. If double the amount exceeds 6 and you lost this round, transfer the amount onto the next phase.
+Though if you won, give out double the amount of sips that you wagered.
 -
 "Captain Morgan"
-The dealer yells "CAPTAIN MORGAN" and the last person to get their left foot on their chair and stand proud like the captain have to drinks 5 sips. This card can be saved for later.
+The dealer yells "CAPTAIN MORGAN". The last person to get their left foot on their chair and stand proud like the captain have to drinks 5 sips.
+This card can be saved for later.
 -
 "Simp"
-The dealer now chooses a person you have to simp for, meaning you have to drink whatever they were meant to drink next round. Though this amount cannot exceed 5 sips.
+The dealer now chooses a person you have to simp for, meaning you have to drink whatever they were meant to drink next round.
+Though this amount cannot exceed 5 sips.
 -
 "Bartender"
-Make a nice drink for the person/persons in last place on the scoreboard. They have to finish the drink within 4 rounds. Keep an eye on them...
+Make a nice drink for the person/persons in last place on the scoreboard.
+They have to finish the drink within 4 rounds. Keep an eye on them...
 -
 "Jungle Juice"
-All other players pour a shot's worth of their drink into a cup, YOU choose who must drink the concoction.
+All other players pour a shot's worth of their drink into a cup.
+YOU choose who must drink the concoction.
 -
 "Bathroom Break"
-Last person to get into the bathroom has to drink 5 sips! LET THERE BE CAOS!
+Last person to get into the bathroom has to drink 5 sips!
+LET THERE BE CHAOS!
 -
 "The Peep Game"
-Count up, say peep if you can divide the number by 7, or it has a 7 in it. The person that fucks up drinks 4 sips.
+Count up, say peep if you can divide the number by 7, or it has a 7 in it.
+The person that fucks up drinks 4 sips.
 -
 "Bust a rhyme"
-Say a word everybody have to say a word that rhymes with your word, going clockwise. The one who can't rhyme AKA a kindergarten student drinks 4 sips.
+Say a word everybody have to say a word that rhymes with your word, going clockwise.
+The one who can't rhyme AKA a kindergarten student drinks 4 sips.
 -
 "Question Master"
-Anytime you ask a question and someone answers they must drink. Lasts whole game or until this card is drawn again.
+Anytime you ask a question and someone answers they must drink.
+Lasts whole game or until this card is drawn again.
 -
 "We live in a society"
-All players point at a person in the group, they think is most likely to become a criminal. The criminal then chooses a person to rob all their belongings from, sending them into a downwards spiral towards depression, making them drink whatever they wagered last round.
+All players point at the player, they think is most likely to become a criminal.
+The criminal then chooses a person to rob all their belongings from, sending them into a downwards spiral towards depression, making them drink whatever they wagered last round.
 -
 "Loan shark"
-The dealer chooses a player that's suddenly in debt to the dealer. The next time the player wins an amount over 3 sips, the dealer is the one that gives them.
+The dealer chooses a player that's suddenly in debt to the dealer.
+The next time the player wins an amount over 3 sips, the dealer is the one that gives them.
 -
 "BONK! Go to horny jail"
-The last person that had sex, has to drink 4 sips. If you're a virgin, chug your drink in desperation for something miraculous to happen.
+The last person that had sex, has to drink 4 sips.
+If you're a virgin, chug your drink in desperation for something miraculous to happen.
 -
-"Edgel0rd"
-The players collectively point out the biggest edgelord in the group. Because of the players selfdestructive tendencies, the player takes 4 sips.
+"XxEdgel0rdxX"
+The players collectively point out the biggest edgelord in the group.
+Because of the players selfdestructive tendencies, the player takes 4 sips.
 -
 "Heisenberg"
-You're not in danger, you ARE the danger. As the meth kingpin himself/herself, anyone who dared giving out sips to you this turn, has to drink the same amount themselves.
+You're not in danger, you ARE the danger.
+As the meth kingpin himself/herself, anyone who dared giving out sips to you this turn, has to drink the same amount themselves.
 -
 "Fortnite"
-The person who drew this card is truly unfortunate, as they have to do a Fortnite dance within 5 seconds of finishing reading this.
+The person who drew this card is truly unfortunate.
+They have to do a Fortnite dance within 5 seconds of finishing reading this.
 -
 "UAV"
-Everyone except you, has to tell who they're giving their sips to next round, if they win. Plan accordingly.
+Everyone except you, has to tell who they're giving their sips to next round, if they win.
+Plan accordingly.
 -
 "Switcheroo"
-Switch sips with another player. This card can be saved for later.
+Switch sips with another player.
+This card can be saved for later.
 -
 "An imposter among us"
-Choose a person to be the imposter in secret (document it somehow), When the imposter wins a round you must reveal them. When revealed YOU control the imposters wager and can give out their sips.
+Choose a person to be the imposter in secret (document it somehow).
+When the imposter wins a round you must reveal them. When revealed YOU control the imposters wager and can give out their sips.
 -
 "Minefield"
-Choose a number in secret (document it somehow), and whoever wagers that amount and wins, has to drink that amount instead. This card is active till it happens
+Choose a number in secret (document it somehow). Whoever wagers that amount and wins, has to drink that amount instead.
+This card is active till it happens
 -
 "Is This The Power of A God?"
-You decide what the others have to wager next round. Max 12 sips. However, be careful they could win...
+You decide what the others have to wager next round. Max 12 sips.
+However, be careful they could win...
 -
 "A Battle For The Ages"
-Challenge the player with the highest score to a battle of Rock, Paper, Scissors. The loser drinks 5 sips. If you yourself are the highest scoring player... well you do the math.
+Challenge the player with the highest score to a battle of Rock, Paper, Scissors. The loser drinks 5 sips.
+If you yourself are the highest scoring player... well you do the math.
 -
 "Wild Wild West"
-You now have 3 bullets to shoot of your finger gun. Each shot is 5 sips. You can save em or shoot em now like it's the real wild west! YEEHAW!
+You now have 3 bullets to shoot of your finger gun. Each shot is 5 sips.
+You can save em or shoot em now like it's the real wild west! YEEHAW!
 -
 "I Hate Fruits"
 If you own an Apple product drink 2 sips for each product you own.
+Burn, you rich scum!
 -
 "Winner takes it all"
 All winning wagers next round are yours to give, but if they lose, you have to drink the wager as well.
+:monkaGiga:
 -
 "Mr Bean"
-You can only speak like Mr Bean the entire next round. If you say a "real" word you have to drink 7 sips. And if you don't know who Mr Bean is you drink 8!
+You can only speak like Mr Bean the entire next round.
+If you say a "real" word you have to drink 7 sips. And if you don't know who Mr Bean is you drink 8!
 -
 "I'm here to kick ass..."
 If you recently finished your drink, or chug your drink right now, choose someone to chug as well.
+Time to kick ass!
 -
 "Bottoms up"
 Finish your drink.
+Don't deny it, you wanted that drink anyways.
 -
 "Dealer oh Dealer"
-Not always fun being the dealer, but this time it is. Give out 10 sips.
+Not always fun being the dealer, but this time it is.
+Give out 10 sips.
 -
 "Funniest shit I've ever seen"
-For the next turn you've turned into a pickle, meaning you can only wager your bet, but your fellow players get to decide whether to hit or stand. Comedy at its best.
+For the next turn you've turned into a pickle, meaning you can only wager your bet, but your fellow players get to decide whether to hit or stand.
+Comedy at its best.
 -
 "Where's the lamb sauce?!"
-Your fellow players have forgotten the lamb sauce. In your frustration, you verbally assault the chefs, intimidating them, and preventing them all from dealing out sips to you, for the next round.
+Your fellow players have forgotten the lamb sauce.
+In your frustration, you verbally assault the chefs, intimidating them, and preventing them all from dealing out sips to you, for the next round.
 -
 "Alexa, play BFG Division"
 You ask Alexa to turn on BFG Division by Mick Gordon, and start chugging your drink, like the absolute madlad you are.
+Take it like a champ.
 -

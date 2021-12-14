@@ -33,8 +33,8 @@ public class Chance {
         }
         String lastQuestion = "";
 
-        for (int i = 0; i < holderarr2.size() - 1; i += 2) {
-            lastQuestion = holderarr2.get(i) + "\r\n" + holderarr2.get(i + 1);
+        for (int i = 0; i < holderarr2.size() - 1; i += 3) {
+            lastQuestion = holderarr2.get(i) + "\r\n" + holderarr2.get(i + 1)+ "\r\n"+ holderarr2.get(i + 2)+"\r\n";
             Main.chanceCards.add(lastQuestion);
 
             //picking a random Q's
