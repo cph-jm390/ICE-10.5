@@ -29,10 +29,9 @@ public class PlayGame {
         System.out.println("");
         ui.createPlayer(); //makes last player dealer
         System.out.println("");
+        scores.initiateScoreboard();
         bet.wagerBet(); //kan genbruges til hver runde
         System.out.println("");
-        //deck.giveFirstSet(); //kan genbruges til hver runde
-        System.out.println(Main.players.size());
         deck.HitOrStand(challenger);
         Main.handCounter=resetter;
         deck.HitOrStand(dealer);

@@ -6,6 +6,13 @@ public class Scoreboard {
     //TODO lav kommando !points eller !score for at få visuelt display op for player points
 
 
+    public void initiateScoreboard() {
+        for (int i = 0; i < Main.players.size(); i++) {
+            Main.points.add(0);
+
+        }
+    }
+
     public void printScores() {
         for (int i = 0; i <= Main.players.size() - 1; i++)
             try {

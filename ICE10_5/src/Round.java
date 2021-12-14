@@ -20,25 +20,34 @@ public class Round {
     }
 
     }
+
+
     public void givePoints(){
         List<Double> resetter=new ArrayList<>();
+
         for (int i=0;i<Main.players.size();i++){
+
             if (Main.players.get(i).isHasWon()==true){
+
                 Main.points.add(i,1);
                 Main.players.get(i).setHasWon(false);
 
-            }
+            }/*else if(Main.players.get(i).isHasWon()==false){
+                if (Main.points.get(i)==null){
+                    Main.points.add(i,0);
+                }*/
+
             Main.players.get(i).setHasWon(false);
         }
         for (int i=0;i<Main.players.size();i++){
-            for(int j=Main.players.get(i).getHandValue().size()-1;j>=0;j--){
-                if (Main.players.get(i).getHandValue().size()==0){
+            //for(int j=Main.players.get(i).getHandValue().size()-1;j>=0;j--){
+                /*if (Main.players.get(i).getHandValue().size()==0){
                     break;
-                }
+                }*/
                 //Main.players.get(i).getHandValue().remove(0);
                 Main.players.get(i).setHandValue(resetter);
-                System.out.println(Main.players.get(i).getHandValue());
-            }break;
+                /*System.out.println(Main.players.get(i).getHandValue());
+            }break;*/
         }
     }
     public void setWinner(){

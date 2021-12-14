@@ -27,7 +27,7 @@ public class DeckOfCards {
 
         //shuffle the deck when its created
         OGcards = cards;
-        Collections.shuffle(this.cards);
+        //Collections.shuffle(this.cards);
         int i = 0;
         for (Player player : Main.players) {
             Main.handCounter.add(cards.get(0).getCardValue());
@@ -42,7 +42,7 @@ public class DeckOfCards {
     }
 
     public void HitOrStand(boolean status) {
-        Collections.shuffle(this.cards);
+        //Collections.shuffle(this.cards);
         List<Double> resetter = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         String command;

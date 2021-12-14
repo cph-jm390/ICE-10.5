@@ -16,8 +16,11 @@ public class Main {
 
 
     public static void main(String[] args) {
+        /*for (int i=0;i<10;i++){
+            points.add(0);
+        }*/
 
-        PlayGame game1=new PlayGame();
+            PlayGame game1=new PlayGame();
         game1.startGame();
 
 
