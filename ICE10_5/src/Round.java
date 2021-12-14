@@ -8,11 +8,13 @@ public class Round {
                 Main.players.get(i).setDealer(false);
                 i=Main.MAX-1;
                 Main.players.get(i).setDealer(true);
+                System.out.println(Main.players.get(i).getName()+" is now the dealer");
                 break;
             }
             if(Main.players.get(i).isDealer()==true) {
                 Main.players.get(i).setDealer(false);
                 Main.players.get(i - 1).setDealer(true);
+                System.out.println(Main.players.get(i - 1).getName()+" is now the dealer");
                 break;
             }
         }for(int i=Main.MAX-1;i>=0;i--){
