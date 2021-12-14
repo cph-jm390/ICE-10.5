@@ -22,8 +22,13 @@ public class Main {
 
             PlayGame game1=new PlayGame();
         game1.startGame();
+        for (int i = 0; i < 15; i++) {
+            game1.StartRound();
+            if(i == 15){
+                System.out.println("The game has ended!");
+            }
 
-
+        }
     }
 
     }

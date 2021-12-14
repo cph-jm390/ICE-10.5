@@ -36,10 +36,21 @@ public class Chance {
         for (int i = 0; i < holderarr2.size() - 1; i += 2) {
             lastQuestion = holderarr2.get(i) + "\r\n" + holderarr2.get(i + 1);
             Main.chanceCards.add(lastQuestion);
+
+            //picking a random Q's
         }
+
     }
 
+    public void drawChance() {
+        Collections.shuffle(Main.chanceCards);
+        System.out.println("Drawing chance card...");
+        System.out.println("");
+        System.out.println(Main.chanceCards.get(0));
 
+    }
 }
+
+
 
 
