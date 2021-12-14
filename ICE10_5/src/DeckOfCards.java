@@ -42,19 +42,19 @@ public class DeckOfCards {
     }
 
     public void HitOrStand(boolean status) {
-        //Collections.shuffle(this.cards);
+        Collections.shuffle(this.cards);
         List<Double> resetter = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         String command;
 
         for (int i = 0; i < Main.players.size(); i++) {
-
+            Main.handCounter.clear();
             char c='a';
             if (Main.players.get(i).isDealer() == status) {
                 if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 0) {
                     System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
                 }
-                for(int j=0;i<9;i++) {
+                for(int j=0;j<9;j++) {
                     do {
                         do {
                             System.out.print(Main.players.get(i).getName() + " (H)it or (S)tand? ");
@@ -62,11 +62,12 @@ public class DeckOfCards {
                             c = command.toUpperCase().charAt(0);
                         } while (!(c == 'H' || c == 'S'));
                         if (c=='S'){
-                            Main.handCounter=resetter;
+
+                            Main.handCounter.clear();
                             break;
                         }
                         if (c == 'H') {
-                            for (int k = 0; i < 9; i++) {
+                            for (int k = 0; k < 9; k++) {
 
                                 System.out.println(cards.get(0) + " was drawn");
                                 Main.handCounter.add(cards.get(0).getCardValue());
@@ -74,7 +75,7 @@ public class DeckOfCards {
                                 Main.players.get(i).setHandValue(Main.handCounter);
                                 if(Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue())>10.5){
                                     System.out.println("You busted, noob");
-                                    Main.handCounter=resetter;
+
 
                                     break;
                                 }
