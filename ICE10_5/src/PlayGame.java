@@ -31,13 +31,14 @@ public class PlayGame {
         System.out.println("");
         scores.initiateScoreboard();
         bet.wagerBet(); //kan genbruges til hver runde
-        System.out.println("");
         deck.HitOrStand(challenger);
         Main.handCounter = resetter;
         System.out.println("");
         System.out.println("Dealers turn");
+        System.out.println("------------------------------------------------------------------------------------------------------");
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
+        System.out.println("");
         round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
         scores.printScores();
         chance.drawChance();
@@ -47,24 +48,27 @@ public class PlayGame {
     }
 
     public void StartRound() {
-       // for (int i = 0; i >= 15; i++) {
-            System.out.println("Next Round");
-            bet.wagerBet(); //kan genbruges til hver runde
-            System.out.println("");
-            deck.HitOrStand(challenger);
-            Main.handCounter.clear();
-            System.out.println("");
-            System.out.println("Dealers turn");
-            deck.HitOrStand(dealer);
-            round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
-            round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
-            scores.printScores();
-            chance.drawChance();
-            //
-            round.roleSwap(); //skifter dealer/challenger role
+        // for (int i = 0; i >= 15; i++) {
+        System.out.println("");
+        System.out.println("Next Round");
+        System.out.println("----------------------------------------------------------------------------------------------------");
+        bet.wagerBet(); //kan genbruges til hver runde
+        deck.HitOrStand(challenger);
+        Main.handCounter.clear();
+        System.out.println("");
+        System.out.println("Dealers turn");
+        System.out.println("------------------------------------------------------------------------------------------------------");
+        deck.HitOrStand(dealer);
+        round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
+        System.out.println("");
+        round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
+        scores.printScores();
+        chance.drawChance();
+        //
+        round.roleSwap(); //skifter dealer/challenger role
 
-        }
     }
+}
 
 
 

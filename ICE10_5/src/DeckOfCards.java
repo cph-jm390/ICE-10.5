@@ -52,6 +52,7 @@ public class DeckOfCards {
             char c='a';
             if (Main.players.get(i).isDealer() == status) {
                 if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 0) {
+                    System.out.println("");
                     System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
                 }
                 for(int j=0;j<9;j++) {
@@ -62,18 +63,19 @@ public class DeckOfCards {
                             c = command.toUpperCase().charAt(0);
                         } while (!(c == 'H' || c == 'S'));
                         if (c=='S'){
-
+                            System.out.println("");
                             Main.handCounter.clear();
                             break;
                         }
                         if (c == 'H') {
                             for (int k = 0; k < 9; k++) {
-
+                                System.out.println("");
                                 System.out.println(cards.get(0) + " was drawn");
                                 Main.handCounter.add(cards.get(0).getCardValue());
                                 cards.remove(0);
                                 Main.players.get(i).setHandValue(Main.handCounter);
                                 if(Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue())>10.5){
+                                    System.out.println("");
                                     System.out.println("You busted, noob");
 
 
@@ -84,6 +86,7 @@ public class DeckOfCards {
 
 
                             System.out.println(Main.players.get(i).getName() + " has " + Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()));
+                            System.out.println("");
                         }
                     } while (c != 'S' && Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5);
                     break;

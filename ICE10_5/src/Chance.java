@@ -44,6 +44,7 @@ public class Chance {
 
     public void drawChance() {
         Collections.shuffle(Main.chanceCards);
+        System.out.println("");
         System.out.println("Drawing chance card...");
         System.out.println("");
         System.out.println(Main.chanceCards.get(0));

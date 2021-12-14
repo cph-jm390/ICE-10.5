@@ -16,9 +16,11 @@ public class Bet {
                     Scanner in = new Scanner(System.in);
                     do {
                         try {
+                            System.out.println("");
                             System.out.print("How much do you want to a bet(sips):" + Main.players.get(i).getName() + "?");
                             bet = (int) in.nextDouble();
                             System.out.println(Main.players.get(i).getName() +" wagered " + bet+" sips");
+                            System.out.println("");
                             //read num value from keyboard
 
                             //read new line and ignore
