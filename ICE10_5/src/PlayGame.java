@@ -34,6 +34,8 @@ public class PlayGame {
         System.out.println("");
         deck.HitOrStand(challenger);
         Main.handCounter=resetter;
+        System.out.println("");
+        System.out.println("Dealers turn");
         deck.HitOrStand(dealer);
         round.setWinner(); //tjekker hvem der har vundet runden og ændrer status
         round.givePoints(); //giver vinder point og sætter dem til værende tabere efter
