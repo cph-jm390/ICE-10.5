@@ -27,7 +27,7 @@ public class DeckOfCards {
 
         //shuffle the deck when its created
         OGcards = cards;
-        //Collections.shuffle(this.cards);
+
         int i = 0;
         for (Player player : Main.players) {
             Main.handCounter.add(cards.get(0).getCardValue());
