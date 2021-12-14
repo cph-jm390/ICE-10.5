@@ -28,11 +28,8 @@ public class Round {
         List<Double> resetter=new ArrayList<>();
 
         for (int i=0;i<Main.players.size();i++){
-            for (int k=0;k<Main.players.size();k++) {
-                if ((Main.players.get(i).isDealer() == true) && (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5)&&Main.players.get(k).calculateHandValue(Main.players.get(k).getHandValue()) <= 10.5) {
-                    Main.players.get(k).setHasWon(true);
-                }
-            }
+
+
             if (Main.players.get(i).isHasWon()==true){
 
                 Main.points.add(i,Main.points.get(i)+1);
@@ -62,8 +59,11 @@ public class Round {
                 if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) > 10.5) { //tjekker om player er over 10,5
                     Main.players.get(i).setHasWon(false);
 
-                } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) < Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue()) && Main.players.get(j).isDealer()==true) {
+                } else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) < Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue()) && Main.players.get(j).isDealer()==true &&Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue()) <= 10.5) {
                     Main.players.get(i).setHasWon(false);
+                }else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5 && Main.players.get(j).isDealer()==true &&Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue()) > 10.5) {
+                    Main.players.get(i).setHasWon(true);
+                //}else if (Main.players.get(i).calculateHandValue(Main.players.get(i).getHandValue()) <= 10.5 && Main.players.get(j).isDealer()==true &&Main.players.get(j).calculateHandValue(Main.players.get(j).getHandValue())<)
                 }else if (Main.players.get(i).isDealer()==true){
                     Main.players.get(i).setHasWon(false);
 
